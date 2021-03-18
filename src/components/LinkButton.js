@@ -5,8 +5,6 @@ import tiktokIcon from '@iconify/icons-simple-icons/tiktok';
 import youtubeIcon from '@iconify/icons-simple-icons/youtube';
 import instagramIcon from '@iconify/icons-simple-icons/instagram';
 import anchorIcon from '@iconify-icons/simple-icons/anchor';
-import githubIcon from '@iconify/icons-simple-icons/github';
-import discordIcon from '@iconify/icons-simple-icons/discord';
 
 const LinkButton = (props) => {
   const [icon, setIcon] = useState('');

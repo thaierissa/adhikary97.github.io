@@ -1,23 +1,27 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
-import Particles from './components/Particles';
-import LinkList from './components/LinkList'
+import React from "react";
+import { Container } from "react-bootstrap";
+import LinkList from "./components/LinkList";
 import {
   BrowserRouter as Router,
   Route,
   Redirect,
   Switch,
-} from 'react-router-dom';
-
+} from "react-router-dom";
+import MultipleParticles from "./components/MultipleParticles";
 
 const App = () => {
   return (
     <Router>
-      <Particles />
+      <MultipleParticles/>
       <main>
-        <Container>
-          <LinkList/>
-        </Container>
+        <Switch>
+          <Route path="/" exact>
+            <Container>
+              <LinkList />
+            </Container>
+          </Route>
+          <Redirect to="/" />
+        </Switch>
       </main>
     </Router>
   );
